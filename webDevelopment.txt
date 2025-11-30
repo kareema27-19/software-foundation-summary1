@@ -1,0 +1,109 @@
+1. Front-End (Client-Side)
+
+Responsibility:
+The front-end is what the user interacts with directly. It’s responsible for displaying information, collecting input, and providing a smooth user experience.
+
+Key Tasks:
+
+Designing the layout, look, and feel of the application (UI/UX).
+
+Handling user interactions (clicks, forms, navigation).
+
+Sending requests to the back-end and displaying responses.
+
+Ensuring responsiveness across devices (desktop, mobile).
+
+Technologies Used:
+
+HTML, CSS, JavaScript
+
+Frameworks like React, Angular, Vue
+
+Example:
+When you log into a website:
+
+Front-end shows the login form.
+
+Takes your username and password.
+
+Sends it to the back-end for verification.
+
+Shows success or error message.
+
+2. Back-End (Server-Side)
+
+Responsibility:
+The back-end is the “brain” behind the application. It processes requests, performs business logic, and communicates with the database.
+
+Key Tasks:
+
+Handling user requests coming from the front-end.
+
+Validating data and enforcing rules (business logic).
+
+Managing authentication, authorization, and security.
+
+Integrating with databases, third-party APIs, and services.
+
+Technologies Used:
+
+Languages: Java, Python, C#, Node.js, PHP
+
+Frameworks: Express.js, Django, Spring, .NET
+
+Example:
+When you submit your login info:
+
+Back-end checks if the username/password is correct.
+
+Generates a session token if valid.
+
+Sends the result back to the front-end.
+
+3. Database
+
+Responsibility:
+The database stores, retrieves, and manages data. It ensures data is consistent, secure, and quickly accessible.
+
+Key Tasks:
+
+Storing structured (SQL) or unstructured (NoSQL) data.
+
+Managing relationships between data entities.
+
+Ensuring data integrity and consistency.
+
+Handling queries from the back-end efficiently.
+
+Technologies Used:
+
+Relational DBs: MySQL, PostgreSQL, SQL Server, Oracle
+
+NoSQL DBs: MongoDB, Cassandra, Firebase
+
+Example:
+For login:
+
+Database stores your username and encrypted password.
+
+Back-end queries the database to verify credentials.
+
+Database responds with success/failure.
+
+How They Work Together
+
+Front-end: User submits login → sends data to back-end.
+
+Back-end: Receives data → applies rules → queries database.
+
+Database: Returns data → back-end processes it → sends result to front-end.
+
+Front-end: Displays message to user.
+
+Think of it as a restaurant:
+
+Front-end = Waiter (takes your order, delivers food).
+
+Back-end = Kitchen (prepares food according to order).
+
+Database = Pantry (stores ingredients, retrieves them when needed).
