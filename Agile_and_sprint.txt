@@ -1,0 +1,37 @@
+1. Agile
+
+Agile is a software development methodology (or mindset) focused on flexibility, collaboration, and delivering value quickly. Instead of planning an entire project upfront, Agile emphasizes:
+
+Iterative development: Work is done in small increments, allowing frequent reassessment.
+
+Customer collaboration: Continuous feedback ensures the product meets actual needs.
+
+Responding to change: Plans can adapt as requirements evolve.
+
+Self-organizing teams: Teams decide how to best accomplish work.
+
+Key Agile frameworks include:
+
+Scrum
+
+Kanban
+
+Extreme Programming (XP)
+
+2. Sprint
+
+A Sprint is a time-boxed iteration in Agile (specifically in Scrum):
+
+Typically lasts 1–4 weeks.
+
+During a sprint, a team commits to completing a set of tasks or user stories.
+
+It ends with:
+
+A potentially shippable product increment.
+
+A Sprint Review (demonstration of work done).
+
+A Sprint Retrospective (discussion of improvements for the next sprint).
+
+Analogy: Think of Agile as the philosophy of “building software in small, adaptable steps,” and a Sprint as one step or cycle in that process.
