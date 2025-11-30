@@ -107,3 +107,156 @@ Front-end = Waiter (takes your order, delivers food).
 Back-end = Kitchen (prepares food according to order).
 
 Database = Pantry (stores ingredients, retrieves them when needed).
+
+
+
+1. SQL Server
+
+Role: Database / Data Storage
+
+Description:
+SQL Server is a relational database management system (RDBMS) developed by Microsoft. It stores data in structured tables, supports queries with T-SQL (Transact-SQL), and integrates tightly with the .NET stack.
+
+Key Features:
+
+Relational data storage with tables, views, and stored procedures.
+
+Supports ACID transactions (Atomicity, Consistency, Isolation, Durability).
+
+Security features like authentication, roles, and encryption.
+
+Advanced capabilities: indexing, full-text search, replication, in-memory tables.
+
+Integration with .NET applications via ADO.NET, Entity Framework, and other ORMs.
+
+Use in .NET Stack:
+
+Serves as the persistent storage layer for applications.
+
+Data is retrieved and manipulated using C# through libraries like EF Core or ADO.NET.
+
+2. C#
+
+Role: Programming Language
+
+Description:
+C# is a modern, object-oriented programming language developed by Microsoft for building web, desktop, mobile, and cloud applications. It’s the primary language for the .NET ecosystem.
+
+Key Features:
+
+Strongly typed and statically checked.
+
+Supports OOP concepts: classes, inheritance, polymorphism, interfaces.
+
+Features async/await for asynchronous programming.
+
+Modern features like LINQ, records, pattern matching, and nullable reference types.
+
+Runs on .NET runtime (Core or Framework), which provides memory management, security, and cross-platform capabilities.
+
+Use in .NET Stack:
+
+The application logic layer.
+
+Interacts with databases via EF Core.
+
+Handles user interaction in Blazor applications.
+
+3. Entity Framework Core (EF Core)
+
+Role: Object-Relational Mapper (ORM)
+
+Description:
+EF Core is a lightweight, extensible ORM for .NET. It allows developers to work with databases using C# objects instead of raw SQL queries.
+
+Key Features:
+
+Maps database tables to C# classes (Entities).
+
+Supports LINQ queries to retrieve data.
+
+Handles CRUD operations automatically.
+
+Supports multiple database providers (SQL Server, SQLite, PostgreSQL, MySQL).
+
+Enables code-first and database-first approaches.
+
+Tracks changes and automatically generates SQL commands.
+
+Use in .NET Stack:
+
+EF Core is the data access layer, bridging C# code with SQL Server.
+
+Simplifies database interaction, reducing boilerplate SQL.
+
+4. LINQ (Language Integrated Query)
+
+Role: Querying Tool / Syntax
+
+Description:
+LINQ is a query syntax in C# that allows querying collections, databases, XML, or other data sources in a consistent way.
+
+Key Features:
+
+Integrated into C#; no need for separate query languages.
+
+Works with in-memory collections (LINQ to Objects) or databases (LINQ to Entities).
+
+Supports filtering (Where), projection (Select), ordering (OrderBy), grouping (GroupBy), and aggregation (Sum, Count).
+
+Strongly typed and compile-time checked.
+
+Use in .NET Stack:
+
+In EF Core, LINQ queries are translated into SQL commands and executed on SQL Server.
+
+Makes querying more readable, maintainable, and type-safe.
+
+5. Blazor
+
+Role: Web UI Framework
+
+Description:
+Blazor is a modern web framework in the .NET ecosystem for building interactive client-side web applications using C# instead of JavaScript.
+
+Types of Blazor:
+
+Blazor Server: Runs on the server, uses SignalR to update the UI in the browser.
+
+Blazor WebAssembly: Runs directly in the browser using WebAssembly, fully client-side.
+
+Key Features:
+
+Component-based architecture (like React or Angular).
+
+Two-way data binding.
+
+Supports Razor syntax (mix of HTML and C#).
+
+Integrates easily with EF Core and APIs for full-stack applications.
+
+Use in .NET Stack:
+
+Acts as the presentation layer (UI) of a .NET application.
+
+Can interact with EF Core through services for database access.
+
+Allows C# developers to build web apps without JavaScript.
+
+How They Work Together
+
+Here’s a simplified .NET stack flow:
+
+Blazor (UI Layer): User interacts with forms and buttons → triggers C# event handlers.
+
+C# (Application Layer): Handles business logic and processes requests.
+
+EF Core (Data Access Layer): Translates C# objects/queries into SQL commands.
+
+SQL Server (Database Layer): Stores, retrieves, and updates data.
+
+LINQ (Query Language): Simplifies data retrieval and manipulation within C#.
+
+Example Flow:
+
+User clicks "Show Students" → Blazor component calls a C# method → C# method uses EF Core and LINQ to query SQL Server → Results returned to the Blazor UI for display
